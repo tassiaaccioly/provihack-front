@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { ChallengeContainer, BtnContainer } from "../styles/challengeCards";
-import Button from "../components/Button/button";
+import Button from "../components/Button/Button";
 
 export default function DailyChallengeCard(props) {
   const { name, description, idx, image, beginDate } = props;

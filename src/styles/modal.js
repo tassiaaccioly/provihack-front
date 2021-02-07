@@ -19,7 +19,7 @@ export const ContainerPopUp = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow-y: hidden;
+  overflow-y: auto;
   overflow-x: hidden;
   box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.25);
   position: absolute;

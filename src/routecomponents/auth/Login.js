@@ -1,6 +1,6 @@
 //dependencies
 import React, { useState, useContext, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 //contexts
 import { AuthContext } from "../../contexts/authContext";
@@ -19,7 +19,7 @@ import Delete from "../../assets/icons/delete.svg";
 
 export default function SignUp(props) {
   const authContext = useContext(AuthContext);
-  const { history } = props;
+  const history = useHistory();
 
   const [login, setLogin] = useState({
     email: "",
@@ -43,16 +43,17 @@ export default function SignUp(props) {
     try {
       const response = await api.post("/user/login", login);
 
-      authContext.setLoggedInUser({ ...response.data });
+      authContext.setHackatangaUser({ ...response.data });
       localStorage.setItem(
-        "loggedInUser",
+        "hackatangaUser",
         JSON.stringify({ ...response.data })
       );
       setError("");
-      history.push("/challenges");
+      history.push("/challenges/bigchallenge");
       window.location.reload();
     } catch (err) {
-      setError(err.response.data.msg);
+      console.log(err);
+      // setError(err);
     }
   }
 

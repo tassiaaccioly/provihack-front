@@ -9,7 +9,7 @@ import {
   BtnContainer,
   ParticipantsContainer,
 } from "../styles/challengeCards";
-import Button from "../components/Button/button";
+import Button from "../components/Button/Button";
 
 export default function BigChallengeCard() {
   useContext(AuthContext);

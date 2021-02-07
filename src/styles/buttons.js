@@ -12,6 +12,11 @@ export const MainBtn = styled.button`
   cursor: pointer;
   margin: 1rem auto;
 
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.contrastText};
+  }
+
   :focus {
     outline: none;
     border: 2px solid ${({ theme }) => theme.colors.primary};

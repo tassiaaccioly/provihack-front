@@ -22,6 +22,7 @@ import NavBar from "./components/NavBar";
 import Homepage from "./components/Homepage";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import BigChallenge from "./routecomponents/challenges/BigChallenge";
 
 export default function App() {
   const theme = db.theme;
@@ -50,6 +51,12 @@ export default function App() {
                         />
                       );
                     }}
+                  />
+
+                  <Route
+                    exact
+                    path="/challenges/bigchallenge"
+                    component={BigChallenge}
                   />
 
                   {/* Routers */}

@@ -39,13 +39,13 @@ const InvalidFeedback = styled.p`
 `;
 
 export default function TextInput(props) {
-  const { id, label, text, name, placeholder, value, onChange, error } = props;
+  const { id, label, type, name, placeholder, value, onChange, error } = props;
 
   return (
     <FormGroup>
       <Label htmlFor={id}>{label}</Label>
       <Input
-        type={text}
+        type={type}
         id={id}
         name={name}
         placeholder={placeholder}
