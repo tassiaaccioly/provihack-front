@@ -1,12 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 
-const FormGroup = styled.div``;
+const FormGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 1rem 0;
+`;
 
-const Label = styled.label``;
+const Label = styled.label`
+  color: ${({ theme }) => theme.colors.text};
+  width: 100%;
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+  text-align: left;
+`;
 
 const Input = styled.input`
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   line-height: 2;
   width: 100%;
   border: none;
@@ -15,12 +26,12 @@ const Input = styled.input`
     props.error ? "2px solid #2DD348" : "2px solid crimson"};
   :focus {
     outline: none;
-    border-bottom: 2px solid ${({ theme }) => theme.ButtonTheme};
+    border-bottom: 2px solid ${({ theme }) => theme.colors.primary};
   }
 `;
 
 const InvalidFeedback = styled.p`
-  color: rgb(241, 57, 57);
+  color: ${({ theme }) => theme.colors.invalid};
   font-size: 0.9rem;
   font-weight: 500;
   margin: 5px auto 0;
@@ -28,19 +39,21 @@ const InvalidFeedback = styled.p`
 `;
 
 export default function TextInput(props) {
+  const { id, label, text, name, placeholder, value, onChange, error } = props;
+
   return (
     <FormGroup>
-      <Label htmlFor={props.id}>{props.label}</Label>
+      <Label htmlFor={id}>{label}</Label>
       <Input
-        type="text"
-        id={props.id}
-        name={props.name}
-        placeholder={props.placeholder}
-        value={props.value}
-        onChange={props.onChange}
-        error={props.error || false}
+        type={text}
+        id={id}
+        name={name}
+        placeholder={placeholder}
+        value={value}
+        onChange={onChange}
+        error={error || false}
       />
-      {props.error ? <InvalidFeedback>{props.error}</InvalidFeedback> : null}
+      {error ? <InvalidFeedback>{error}</InvalidFeedback> : null}
     </FormGroup>
   );
 }

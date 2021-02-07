@@ -20,6 +20,7 @@ import { AuthContextComponent } from "../contexts/authContext";
 import ScrollReload from "./components/ScrollReload";
 import NavBar from "./components/NavBar";
 import Homepage from "./components/Homepage/Homepage";
+import About from "./components/About";
 import Footer from "./components/Footer/footer";
 
 export default function App() {
