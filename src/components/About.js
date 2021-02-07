@@ -12,6 +12,7 @@ const Section1 = styled.section`
   align-items: center;
   justify-content: center;
   margin: auto;
+  margin-bottom: 100px;
 
   h1 {
     font-size: 3.5rem;
@@ -21,7 +22,7 @@ const Section1 = styled.section`
 
   img {
     margin: 2rem auto;
-    width: 40rem;
+    width: 6rem;
   }
 
   h4 {
