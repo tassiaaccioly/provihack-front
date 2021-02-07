@@ -1,10 +1,10 @@
 //dependências
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 //Router Components
 import AuthRouter from "./routecomponents/auth/AuthRouter";
-import ChallengesRouter from "./routeComponents/challenges/ChallengesRouter";
+import ChallengesRouter from "./routecomponents/challenges/ChallengesRouter";
 
 //Temas
 import { ThemeProvider } from "styled-components";
@@ -14,39 +14,80 @@ import db from "./assets/theme.json";
 import { GlobalStyle } from "./styles/globalStyles";
 
 //contexts
-import { AuthContextComponent } from "../contexts/authContext";
+import { AuthContextComponent } from "./contexts/authContext";
 
 //componentes
 import ScrollReload from "./components/ScrollReload";
 import NavBar from "./components/NavBar";
-import Homepage from "./components/Homepage/Homepage";
+import Homepage from "./components/Homepage";
 import About from "./components/About";
-import Footer from "./components/Footer/footer";
+import Footer from "./components/Footer";
 
 export default function App() {
   const theme = db.theme;
+
+  const [modal, setModal] = useState(false);
+
   return (
     <>
-      <ScrollReload>
-        <ThemeProvider theme={theme}>
-          <GlobalStyle />
-          <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <BrowserRouter>
+          <ScrollReload>
             <AuthContextComponent>
-              <NavBar />
-              <Switch>
-                <Route exact path="/" component={Homepage} />
+              <NavBar modal={modal} setModal={setModal} />
+              <div style={{ marginTop: "8rem", marginBottom: "15rem" }}>
+                <Switch>
+                  <Route
+                    exact
+                    path="/"
+                    render={(routeProps) => {
+                      return (
+                        <Homepage
+                          {...routeProps}
+                          modal={modal}
+                          setModal={setModal}
+                        />
+                      );
+                    }}
+                  />
 
-                {/* Routers */}
-                <Route path="/auth" component={AuthRouter} />
-                <Route path="/challenges" component={ChallengesRouter} />
+                  {/* Routers */}
+                  <Route
+                    exact
+                    path="/auth"
+                    render={(routeProps) => {
+                      return (
+                        <AuthRouter
+                          {...routeProps}
+                          modal={modal}
+                          setModal={setModal}
+                        />
+                      );
+                    }}
+                  />
+                  <Route
+                    exact
+                    path="/challenges"
+                    render={(routeProps) => {
+                      return (
+                        <ChallengesRouter
+                          {...routeProps}
+                          modal={modal}
+                          setModal={setModal}
+                        />
+                      );
+                    }}
+                  />
 
-                <Route path="/about" component={About} />
-              </Switch>
+                  <Route path="/about" component={About} />
+                </Switch>
+              </div>
               <Footer />
             </AuthContextComponent>
-          </BrowserRouter>
-        </ThemeProvider>
-      </ScrollReload>
+          </ScrollReload>
+        </BrowserRouter>
+      </ThemeProvider>
     </>
   );
 }

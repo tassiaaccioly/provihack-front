@@ -1,17 +1,23 @@
+//dependencies
 import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import AuthContext from "../../contexts/authContext";
+//contexts
+import { AuthContext } from "../../contexts/authContext";
 import api from "../../apis/challengesApi";
 
+//components
 import TextInput from "../../components/inputs/TextInput";
-import { LoginBtn, LinkedinBtn, GoogleBtn } from "../../styles/buttons";
-import { BigContainer } from "../../styles/challengeCards";
+import { MainBtn, LinkedinBtn, GoogleBtn } from "../../styles/buttons";
+import { PopUp, ContainerPopUp, CloseBtn, SignUpImg } from "../../styles/modal";
 import { Form, BtnContainer } from "../../styles/forms";
+import Login from "./Login";
 
+//images
 import SignUpImage from "../../assets/img/signup-image.svg";
+import Delete from "../../assets/icons/delete.svg";
 
-export default function Login(props) {
+export default function SignUp(props) {
   const authContext = useContext(AuthContext);
   const { history } = props;
 
@@ -51,7 +57,7 @@ export default function Login(props) {
   }
 
   return (
-    <BigContainer>
+    <>
       <Form onSubmit={handleSubmit}>
         <TextInput
           autoFocus
@@ -78,14 +84,21 @@ export default function Login(props) {
         <BtnContainer>
           <Link to="/profile/edit">Esqueceu a senha?</Link>
         </BtnContainer>
-        <LoginBtn type="submit">Log In</LoginBtn>
-        <p>-------------- or continue with --------------</p>
+        <MainBtn style={{ width: "100%" }} type="submit">
+          Log In
+        </MainBtn>
+        <p style={{ margin: "1rem 0" }}>
+          -------------- or continue with --------------
+        </p>
         <BtnContainer>
-          <LinkedinBtn type="button">Log In with Linkedin</LinkedinBtn>
-          <GoogleBtn type="button">Log In with Google</GoogleBtn>
+          <LinkedinBtn type="button" disabled>
+            Log In with Linkedin
+          </LinkedinBtn>
+          <GoogleBtn type="button" disabled>
+            Log In with Google
+          </GoogleBtn>
         </BtnContainer>
       </Form>
-      <img src={SignUpImage} alt="SignUp" />
-    </BigContainer>
+    </>
   );
 }

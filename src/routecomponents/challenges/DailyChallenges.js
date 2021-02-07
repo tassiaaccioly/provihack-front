@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 
-import AuthContext from "../../contexts/authContext";
+import { AuthContext } from "../../contexts/authContext";
 import api from "../../apis/challengesApi";
 
 import { BigContainer } from "../../styles/challengeCards";

@@ -7,6 +7,8 @@ import DailyChallenges from "./DailyChallenges";
 import Group from "./Group";
 
 export default function ChallengeRouter(props) {
+  const { modal, setModal } = props;
+
   return (
     <React.Fragment>
       <Switch>

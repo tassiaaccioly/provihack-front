@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-export default function Button(props){
-    return(
-        <button className='button' type='button' onClick={props.onClick}>
-            {props.children}
-        </button>
-    )
+import { MainBtn } from "../../styles/buttons";
+
+export default function Button(props) {
+  const { type, onClick, children } = props;
+
+  return (
+    <MainBtn type={type} onClick={onClick}>
+      {children}
+    </MainBtn>
+  );
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import AuthContext from "../contexts/authContext";
+import { AuthContext } from "../contexts/authContext";
 import api from "../apis/challengesApi";
 
 export default function ChallengeWheel() {

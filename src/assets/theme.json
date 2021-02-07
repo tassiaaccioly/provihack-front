@@ -8,8 +8,9 @@
       "invalid": "crimson",
       "text": "#000",
       "contrastText": "#FFF",
-      "disabled": "#C4C4C4"
+      "disabled": "#C4C4C4",
+      "lightGray": "#EBEBEB"
     },
-    "borderRadius": "10px"
+    "borderRadius": "15px"
   }
 }

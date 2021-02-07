@@ -45,7 +45,7 @@ export default function About() {
       <Section1>
         <h1>Sobre Nós</h1>
         <img src={Logo} alt="Logo" />
-        <h4>Olá, bem vindos ao nosso projeto Hackatanga.</h4>
+        <h4>Olá, bem vindas à Hackatanga.</h4>
         <p>
           A Hackatanga é uma plataforma para pessoas em nível júnior que sentem
           dificuldade em entrar no mercado de trabalho, pois não tem experiência
@@ -55,11 +55,11 @@ export default function About() {
           A Hackatanga permite que pessoas que se conectem para realizar
           diversos desafios propostos por nossos parceiros e ao final possam
           receber feedback dos mesmos. Além de incentivar o networking, a
-          plataforma **_Hackatanga_** também ajuda no desenvolvimento de
-          softskills já que os desafios em sua maioria são desenvolvidos em
-          grupo, também no desenvolvimento de projetos para o portfolio do
-          usuário, no desenvolvimento de experiência na área, e também a
-          possibilidade de visibilidade pelas empresas parceiras e outras!
+          plataforma Hackatanga também ajuda no desenvolvimento de softskills já
+          que os desafios em sua maioria são desenvolvidos em grupo, também no
+          desenvolvimento de projetos para o portfolio do usuário, no
+          desenvolvimento de experiência na área, e também a possibilidade de
+          visibilidade pelas empresas parceiras e outras!
         </p>
       </Section1>
       <Section2>
@@ -75,7 +75,11 @@ export default function About() {
           linkedin="https://www.linkedin.com/in/mariana-maiko-tsukasaki-717336bb/"
           github="https://github.com/Marimaiko"
         />
-        <CardAbout name="Juliana Felippe" description="" linkedin="" />
+        <CardAbout
+          name="Juliana Felippe"
+          description="Juliana é product designer e adora usar o que aprendeu no seu tempo na ciência para advogar em prol do design. Artista visual e sistemática, está animada para resolver os problemas do mundo com a sua mala de ferramentas."
+          linkedin=" https://www.linkedin.com/in/designerjuliana-felippe/"
+        />
         <CardAbout
           name="Laura Santos"
           description="Laura é Administradora, gosta de viajar e está se aventurando no mundo tech."
@@ -83,7 +87,7 @@ export default function About() {
         />
         <CardAbout
           name="Renata Piauí"
-          description=""
+          description="Renata é formada em Marketing mas com amor por dados e estatística, hoje trabalha como analista de BI e o céu é o limite!"
           linkedin="https://www.linkedin.com/in/renata-borges-a11881110"
         />
       </Section2>
