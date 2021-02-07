@@ -10,12 +10,14 @@ export default function DailyChallengeCard(props) {
   return (
     <ChallengeContainer key={idx}>
       <img src={image} alt="Company logo" />
-      <h1>{name}</h1>
-      <p>{description}</p>
-      <BtnContainer>
-        <p>{beginDate}</p>
-        <Button>Participar</Button>
-      </BtnContainer>
+      <div>
+        <h1>{name}</h1>
+        <p>{description}</p>
+        <BtnContainer>
+          <p>{beginDate}</p>
+          <Button>Participar</Button>
+        </BtnContainer>
+      </div>
     </ChallengeContainer>
   );
 }

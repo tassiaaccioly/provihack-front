@@ -6,3 +6,10 @@ export const Form = styled.form`
   align-items: center;
   justify-content: center;
 `;
+
+export const BtnContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+`;

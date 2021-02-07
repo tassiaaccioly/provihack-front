@@ -6,6 +6,10 @@ import api from "../../apis/challengesApi";
 
 import TextInput from "../../components/inputs/TextInput";
 import { LoginBtn, LinkedinBtn, GoogleBtn } from "../../styles/buttons";
+import { BigContainer } from "../../styles/challengeCards";
+import { Form, BtnContainer } from "../../styles/forms";
+
+import SignUpImage from "../../assets/img/signup-image.svg";
 
 export default function Login(props) {
   const authContext = useContext(AuthContext);
@@ -71,9 +75,9 @@ export default function Login(props) {
           error={error}
           onChange={handleChange}
         />
-        <div>
+        <BtnContainer>
           <Link to="/profile/edit">Esqueceu a senha?</Link>
-        </div>
+        </BtnContainer>
         <LoginBtn type="submit">Log In</LoginBtn>
         <p>-------------- or continue with --------------</p>
         <BtnContainer>
@@ -81,6 +85,7 @@ export default function Login(props) {
           <GoogleBtn type="button">Log In with Google</GoogleBtn>
         </BtnContainer>
       </Form>
+      <img src={SignUpImage} alt="SignUp" />
     </BigContainer>
   );
 }
