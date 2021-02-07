@@ -16,7 +16,7 @@ nav.links{
     width: 600px;
     margin-right: 50px;
 }
-a{
+.links a{
     float: right;
     justify-content: center;
     padding: 30px;
@@ -25,7 +25,7 @@ a{
     color: black;
 }
 
-a:hover{
+.links a:hover{
     text-decoration: underline;
     background-color: grey;
 }

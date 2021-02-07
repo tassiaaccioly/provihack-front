@@ -1,16 +1,34 @@
-
-
-nav.links-pag{
-    width: 100%;
-    height: 288px;
+.footer{
+    display: flex;
     background: #000000;
-    justify-content: flex-start;
+    height: 250px;
+    justify-content: space-around;
+
 }
-nav.links-pag.a{
-    color: white;
-    text-decoration: none;  
+
+.links-pag a{
     float: left;
-    justify-content: center;
-    padding: 30px;
+    margin-top: 45px;
+    padding: 15px;
     font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.links-pag a:hover{
+    text-decoration: underline;
+    background-color: grey;
+}
+
+.redes-sociais{
+    color:whitesmoke;
+    justify-content: flex-start;
+    /* border: 2px solid whitesmoke; */
+    width: auto;
+    margin-left: 280px;
+}
+
+.profile{
+    background-color: teal;
+    border-radius: 25px;
 }
