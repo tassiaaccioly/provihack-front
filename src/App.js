@@ -34,6 +34,12 @@ export default function App() {
               <NavBar />
               <Switch>
                 <Route exact path="/" component={Homepage} />
+
+                {/* Routers */}
+                <Route path="/auth" component={AuthRouter} />
+                <Route path="/challenges" component={ChallengesRouter} />
+
+                <Route path="/about" component={About} />
               </Switch>
               <Footer />
             </AuthContextComponent>
