@@ -1,0 +1,15 @@
+{
+  "theme": {
+    "colors": {
+      "primary": "#F9A826",
+      "secondary": "#C92491",
+      "tertiary": "#06D19C",
+      "valid": "#2DD348",
+      "invalid": "crimson",
+      "text": "#000",
+      "contrastText": "#FFF",
+      "disabled": "#C4C4C4"
+    },
+    "borderRadius": "10px"
+  }
+}
