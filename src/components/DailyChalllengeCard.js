@@ -4,6 +4,11 @@ import styled from "styled-components";
 import AuthContext from "../contexts/authContext";
 import api from "../apis/challengesApi";
 
+import {
+  BigContainer,
+  ChallengeContainer,
+  BtnContainer,
+} from "../styles/challengeCards";
 import Button from "../components/Button/button";
 
 export default function DailyChallengeCard() {
@@ -26,18 +31,18 @@ export default function DailyChallengeCard() {
   }, []);
 
   return (
-    <div>
+    <BigContainer>
       {challenges.map((challenge, idx) => (
-        <div key={idx}>
+        <ChallengeContainer key={idx}>
           <img src={challenge.image} alt="Company logo" />
           <h1>{challenge.name}</h1>
           <p>{challenge.description}</p>
-          <div>
+          <BtnContainer>
             <p>{challenge.beginDate}</p>
             <Button>Participar</Button>
-          </div>
-        </div>
+          </BtnContainer>
+        </ChallengeContainer>
       ))}
-    </div>
+    </BigContainer>
   );
 }

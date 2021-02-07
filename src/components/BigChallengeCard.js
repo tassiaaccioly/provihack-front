@@ -3,6 +3,12 @@ import React, { useState, useEffect, useContext } from "react";
 import AuthContext from "../contexts/authContext";
 import api from "../apis/challengesApi";
 
+import {
+  BigContainer,
+  ChallengeContainer,
+  BtnContainer,
+  ParticipantsContainer,
+} from "../styles/challengeCards";
 import Button from "../components/Button/button";
 
 export default function BigChallengeCard() {
@@ -26,25 +32,25 @@ export default function BigChallengeCard() {
   }, []);
 
   return (
-    <div>
+    <BigContainer>
       {challenges.map((challenge, idx) => (
-        <div key={idx}>
+        <ChallengeContainer key={idx}>
           <img src={challenge.image} alt="Company logo" />
           <h1>{challenge.name}</h1>
           <p>{challenge.description}</p>
-          <div>
-            <div>
+          <BtnContainer>
+            <ParticipantsContainer>
               <p>{challenge.participants.length} pessoas já estão inscritas</p>
               <p>
                 Limite de{" "}
                 {challenge.maxParticipantsPerGroup * challenge.maxGroups}{" "}
                 pessoas.
               </p>
-            </div>
+            </ParticipantsContainer>
             <Button>Participar</Button>
-          </div>
-        </div>
+          </BtnContainer>
+        </ChallengeContainer>
       ))}
-    </div>
+    </BigContainer>
   );
 }

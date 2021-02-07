@@ -22,6 +22,8 @@ export default function ChallengeWheel() {
         const response = await api.get("/challenge");
 
         console.log(response);
+
+        setChallenges([...response.data]);
       } catch (err) {
         console.error(err);
       }
