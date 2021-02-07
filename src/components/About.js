@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 import CardAbout from "./CardAbout";
 
+import Logo from "../assets/img/logo_hackatanga.svg";
+
 const Section1 = styled.section`
   width: 70vw;
   display: flex;
@@ -14,6 +16,11 @@ const Section1 = styled.section`
     font-size: 3.5rem;
     font-weight: 700;
     line-height: 1.5;
+  }
+
+  img {
+    margin: 2rem auto;
+    width: 40rem;
   }
 
   h4 {
@@ -37,7 +44,8 @@ export default function About() {
     <>
       <Section1>
         <h1>Sobre Nós</h1>
-        <h4>Olá, bem vindos ao nosso projeto "Hackatanga".</h4>
+        <img src={Logo} alt="Logo" />
+        <h4>Olá, bem vindos ao nosso projeto Hackatanga.</h4>
         <p>
           A Hackatanga é uma plataforma para pessoas em nível júnior que sentem
           dificuldade em entrar no mercado de trabalho, pois não tem experiência
@@ -63,12 +71,16 @@ export default function About() {
         />
         <CardAbout
           name="Mariana Maiko"
-          description=""
+          description="Mariana é tecnóloga mecatrônica e engenheira elétrica, e pefere comida nordestina à rodízio de sushis"
           linkedin="https://www.linkedin.com/in/mariana-maiko-tsukasaki-717336bb/"
           github="https://github.com/Marimaiko"
         />
         <CardAbout name="Juliana Felippe" description="" linkedin="" />
-        <CardAbout name="Laura Santos" description="" linkedin="" />
+        <CardAbout
+          name="Laura Santos"
+          description="Laura é Administradora, gosta de viajar e está se aventurando no mundo tech."
+          linkedin="https://www.linkedin.com/in/laurasantosdeoliveira"
+        />
         <CardAbout
           name="Renata Piauí"
           description=""
