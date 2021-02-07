@@ -1,3 +1,8 @@
-image_box{
-    width: 50%;
+.image_box{
+    width: 110%;
+    height: auto;
+    float: right;
+    /* border: 3px solid blue; */
+    display: flex;
+    box-sizing: border-box;
 }

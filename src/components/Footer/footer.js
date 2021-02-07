@@ -3,13 +3,10 @@ import './footer.css'
 
 export default function Footer(){
     return(
-        <div className='footer'>
-            <nav className='links-pag'>
-                <a href='/'>Gerente do Mês</a>
-                <a href='/'>Parceiros</a>
-                <a href='/'>Contatos</a>
-                <a href='/'>Login</a>
-            </nav>
-        </div>
+        <nav className='links-pag'>
+            <a href='/'>Sobre nós</a>
+            <a href='/'>Pesquise um júniors</a>
+            <a href='/'>Contatos</a>
+        </nav>
     )
 }

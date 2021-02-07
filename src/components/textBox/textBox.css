@@ -1,4 +1,8 @@
-text_box{
-    width: 50%;
-    display: flex;
+div.text_box{
+    width: 65%;
+    height: 50%;
+    /* border: 5px solid gray; */
+    margin: auto;
+    padding: 50px;
 }
+

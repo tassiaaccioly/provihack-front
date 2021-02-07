@@ -1,7 +1,11 @@
-button{
+.button{
     width: 131px;
     height: 38px;
     background: #C92491;
+    color: cornsilk;
     border-radius: 15px;
     cursor: pointer;
+    border-style: none;
+    float: right;
+    margin-right: 160px;
 }

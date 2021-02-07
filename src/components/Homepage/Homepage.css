@@ -1,0 +1,16 @@
+
+
+.oq-fazemos{
+    display: flex;
+    /* flex-direction: row;  */
+    justify-content: space-around;
+}
+
+.desafio-box{
+    display: flex;
+}
+
+.cadastro-box{
+    display: flex;
+}
+
