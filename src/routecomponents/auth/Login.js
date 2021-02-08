@@ -9,17 +9,13 @@ import api from "../../apis/challengesApi";
 //components
 import TextInput from "../../components/inputs/TextInput";
 import { MainBtn, LinkedinBtn, GoogleBtn } from "../../styles/buttons";
-import { PopUp, ContainerPopUp, CloseBtn, SignUpImg } from "../../styles/modal";
 import { Form, BtnContainer } from "../../styles/forms";
-import Login from "./Login";
 
-//images
-import SignUpImage from "../../assets/img/signup-image.svg";
-import Delete from "../../assets/icons/delete.svg";
-
-export default function SignUp(props) {
+export default function Login(props) {
   const authContext = useContext(AuthContext);
   const history = useHistory();
+
+  const { ClosePopUp } = props;
 
   const [login, setLogin] = useState({
     email: "",
@@ -49,8 +45,8 @@ export default function SignUp(props) {
         JSON.stringify({ ...response.data })
       );
       setError("");
+      ClosePopUp();
       history.push("/challenges/bigchallenge");
-      window.location.reload();
     } catch (err) {
       console.log(err);
       // setError(err);

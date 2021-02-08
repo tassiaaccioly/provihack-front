@@ -1,0 +1,102 @@
+[
+  {
+    "groupNumber": 1,
+    "members": [0, 1, 2, 3],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 2,
+    "members": [],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 3,
+    "members": [0, 1, 2, 3],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 4,
+    "members": [0, 1, 2],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 5,
+    "members": [0, 1, 2, 3, 4, 5],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 6,
+    "members": [0, 1, 2, 3, 4],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 7,
+    "members": [],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 8,
+    "members": [0, 1, 2],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 9,
+    "members": [0, 1, 2, 3, 4],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 10,
+    "members": [0, 1, 2, 3, 4, 5],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 11,
+    "members": [0, 1, 2],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 12,
+    "members": [0, 1],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 13,
+    "members": [0, 1, 2, 3],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 14,
+    "members": [0, 1, 2, 3, 4],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 15,
+    "members": [0, 1],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 16,
+    "members": [0],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 17,
+    "members": [0, 1, 2, 3],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 18,
+    "members": [],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 19,
+    "members": [],
+    "id": "601f56ca2bc9319f2ff4febb"
+  },
+  {
+    "groupNumber": 20,
+    "members": [],
+    "id": "601f56ca2bc9319f2ff4febb"
+  }
+]

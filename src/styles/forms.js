@@ -9,6 +9,10 @@ export const Form = styled.form`
   width: 45%;
 `;
 
+export const FormRegistro = styled(Form)`
+  width: 90%;
+`;
+
 export const BtnContainer = styled.div`
   display: flex;
   flex-direction: row;
