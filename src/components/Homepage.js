@@ -14,7 +14,7 @@ import {
   Partners,
   PartnerBox,
 } from "../styles/homepage";
-import ImageBox from "./imageBox/ImageBox";
+import ImageBox from "./imageBox/imageBox";
 import TextBox from "./TextBox";
 import Button from "./Button/Button";
 

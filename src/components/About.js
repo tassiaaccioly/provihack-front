@@ -11,6 +11,8 @@ const Section1 = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: auto;
+  margin-bottom: 100px;
 
   h1 {
     font-size: 3.5rem;
@@ -20,7 +22,7 @@ const Section1 = styled.section`
 
   img {
     margin: 2rem auto;
-    width: 40rem;
+    width: 6rem;
   }
 
   h4 {
@@ -37,6 +39,7 @@ const Section2 = styled(Section1)`
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 `;
 
 export default function About() {
