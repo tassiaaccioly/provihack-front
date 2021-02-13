@@ -46,27 +46,21 @@ export default function SignUp(props) {
   }
 
   function ClosePopUp() {
-    setModal(false);
+    setModal(!modal);
   }
 
   function handleClick() {
-    setLoginModal(true);
+    setLoginModal(!loginModal);
   }
 
   async function handleSubmit(event) {
     event.preventDefault();
 
     try {
-      const response = await api.post("/user/singup", signUp);
+      await api.post("/user/singup", signUp);
 
-      authContext.setHackatangaUser({ ...response.data });
-      localStorage.setItem(
-        "hackatangauser",
-        JSON.stringify({ ...response.data })
-      );
       setError("");
       history.push("/bigchallenge");
-      window.location.reload();
     } catch (err) {
       setError(err.response.data.msg);
     }
@@ -77,7 +71,7 @@ export default function SignUp(props) {
       <PopUp onClick={ClosePopUp}></PopUp>
       <ContainerPopUp>
         {loginModal ? (
-          <Login />
+          <Login ClosePopUp={ClosePopUp} />
         ) : (
           <Form onSubmit={handleSubmit}>
             <TextInput

@@ -68,8 +68,11 @@ export default function Homepage(props) {
           <TextBox>
             <h1 style={{ textAlign: "right" }}>Desafio Provi</h1>
             <p style={{ textAlign: "right" }}>
-              O Hackatanga do mês é com nosso parceiro Provi. Viver essa
-              experiência em grupo vai te ajudar na sua performance como júnior!
+              O Hackatanga do mês é com nosso parceiro <strong>Provi</strong>.
+              Viver essa experiência em grupo vai te ajudar na sua performance
+              como júnior!
+            </p>
+            <p style={{ textAlign: "right" }}>
               E sabe o melhor? Nossos parceiros podem usar nossa plafatormas pra
               pesquisar candidatos, também, porque aqui vai ficar arquivado todo
               o processo que você e seu time fizer.
@@ -84,11 +87,19 @@ export default function Homepage(props) {
           <TextBox title="Cadastro">
             <h1>Cadastro</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat.
+              <strong>Sou uma empresa</strong>
+            </p>
+            <p>
+              Vamos ser parceiros e promover desafios para juniores cadastrados.
+              Pesque algumas mentes brilhantes no nosso repositório!
+            </p>
+            <p>
+              <strong>Sou um júnior</strong>
+            </p>
+            <p>
+              Ponha seus dados uma única vez e venha curtir um hackatanga com
+              outros júniores, aumentar seu portfolio, ganhar feedbacks e fazer
+              networking!
             </p>
           </TextBox>
           <Button>Cadastrar</Button>

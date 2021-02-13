@@ -30,9 +30,9 @@ export default function NavBar(props) {
     <>
       {modal ? <SignUp modal={modal} setModal={setModal} /> : <></>}
       <Nav>
-        <a href='/'>
-          <img src={Logo} alt='home' />
-        </a>
+        <Link to="/">
+          <img src={Logo} alt="Home" />
+        </Link>
         <Ul>
           {logged ? (
             <>
